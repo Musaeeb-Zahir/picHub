@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import "../styles/Auth.css";
+import "../Styles/Auth.css";
 import appStore from "../redux/store";
 import { Navigate, useNavigate } from "react-router-dom";
 import { setLoginUser } from "../redux/slices/loginFormSlice";
