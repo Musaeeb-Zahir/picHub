@@ -1,0 +1,17 @@
+.loginContainer {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  background-color: #f1f1f2 !important;
+  height: 100%;
+  width: 100vw;
+  background-color: #f5f5f5;
+}
+.loginLogo img {
+  filter: invert(1);
+}
+.login-form {
+  align-self: flex-start;
+  margin-top: 5%;
+  margin-top: 85px;
+}
