@@ -397,4 +397,7 @@ center {
   .LoginLogo {
     display: none;
   }
+  .collection-imagecard > div {
+    flex-direction: column;
+  }
 }
