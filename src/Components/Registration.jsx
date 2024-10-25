@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { useDispatch } from "react-redux";
-import "../styles/Auth.css";
+import "../Styles/Auth.css";
 import { useNavigate } from "react-router-dom";
 import { setUser } from "../redux/slices/registerFormSlice";
 const Register = () => {
