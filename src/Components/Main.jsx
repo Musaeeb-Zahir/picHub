@@ -19,7 +19,6 @@ function Main() {
   const [imageInfo, setimageInfo] = useState(null);
   function handleModel(e, image) {
     e.stopPropagation();
-    // console.log(e.stopPropagation());
     setShowModal(true);
     setimageInfo(image);
   }
@@ -56,7 +55,6 @@ function Main() {
                   handletoast();
                 } else {
                   e.target.style.color = "red";
-                  console.log(e.target);
                   dispatch(
                     addFavourite({
                       imageUrl: image.urls.small,

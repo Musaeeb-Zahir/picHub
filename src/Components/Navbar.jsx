@@ -4,7 +4,7 @@ import { removeLoginUser } from "../redux/slices/loginFormSlice";
 import { setSearchImg } from "../redux/slices/searchSlice";
 import { IoSearchOutline } from "react-icons/io5";
 import { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 function Navbar() {
   const loginState = useSelector((state) => state.loginFormState);
   const categoryState = useSelector((state) => state.category);
@@ -17,8 +17,10 @@ function Navbar() {
   const [query, setQuery] = useState("nature");
   const [search, setsearch] = useState("");
   // ========handleLogOut=========
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   function handleLogOut() {
+    navigate("/login");
     dispatch(removeLoginUser(null));
   }
   // =========handle api==========
@@ -61,7 +63,8 @@ function Navbar() {
     >
       <div className="container">
         <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <Link to="/"
+          <Link
+            to="/"
             // className="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none"
           >
             <img src="logo.png" className="logo logo-image" width="75" />
@@ -119,7 +122,7 @@ function Navbar() {
             </a>
             <ul className="dropdown-menu text-small">
               <li>
-                <Link to="/profile" className="dropdown-item" href="#">
+                <Link to="/profile" className="dropdown-item">
                   Profile
                 </Link>
               </li>

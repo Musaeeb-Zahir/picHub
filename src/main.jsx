@@ -22,7 +22,6 @@ function Main() {
   // const { login, setlogin } = useContext(AppContext);
   const loginState = useSelector((state) => state.loginFormState);
   const isLogin = loginState.length > 0;
-  console.log(isLogin);
   const router = createBrowserRouter([
     {
       path: "/",

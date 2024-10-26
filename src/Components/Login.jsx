@@ -14,8 +14,6 @@ const Login = () => {
 
   function handleOnSubmit(e) {
     e.preventDefault();
-    console.log(email.current.value);
-    console.log(password.current.value);
     const userFound = RegisteredStore.find(
       (items) =>
         items.userEmail === email.current.value &&

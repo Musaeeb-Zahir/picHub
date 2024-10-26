@@ -49,7 +49,6 @@ function ImageCard({ showModal, toggleModal, imageInfo }) {
                         handletoast();
                       } else {
                         e.target.style.color = "red";
-                        console.log(e.target);
                         dispatch(
                           addFavourite({
                             imageUrl: imageInfo.urls.small,
